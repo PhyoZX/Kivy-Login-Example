@@ -29,7 +29,7 @@ wm = WindowManager()
 
 db = DataBase("users.txt")
 
-
+wm.add_widget(LoginWindow(name="login"))
 
 class MyApp(App) :
     def build(self):
