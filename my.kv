@@ -1,0 +1,89 @@
+<CreateAccountWindow>:
+    name : "create"
+
+    user_name : user_name
+    email : email
+    password : password
+
+    FloatLayout :
+        cols : 1
+
+        FloatLayout :
+            size : root.width, root.height/2
+
+            Label :
+                text : "Create An Account"
+
+            Label :
+                text : "Name: "
+
+            TextInput :
+                id : user_name
+                multiline : False
+
+            Label :
+                text : "Email: "
+
+            TextInput :
+                id : email
+                multiline : False
+
+            Label :
+                text : "Password: "
+
+            TextInput :
+                id : password
+                multiline : False
+
+            Button :
+                text : "Already have an account? Log In"
+
+            Button :
+                text : "Submit"
+
+<LoginWindow> :
+    name : "login"
+    email : email
+    password : password
+
+    FloatLayout :
+        Label :
+            text : "Email: "
+
+        TextInput :
+            id : email
+            multiline : False
+
+        Label :
+            text : "Password: "
+
+        TextInput :
+            id : password
+            multiline : False
+
+        Button :
+            text : "Login"
+
+        Button :
+            text : "Don't have an account? Create One"
+
+<MainWindow> :
+    name : name
+    email : email
+    created : created
+
+    FloatLayout :
+        Label :
+            id : name
+            text : "Account Name: "
+
+        Label :
+            id : email
+            text : "Email: "
+
+        Label :
+            id : created
+            text : "Created: "
+
+        Button :
+            text : "Log Out"
