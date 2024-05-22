@@ -25,7 +25,7 @@ class DataBase :
 
     def add_user(self, email, password, name):
         if email.strip() not in self.users :
-            self.users[email.strip()] = (password.strip(), name.stri(), DataBase.get_date())
+            self.users[email.strip()] = (password.strip(), name.strip(), DataBase.get_date())
             self.save()
             return 1
         else :
